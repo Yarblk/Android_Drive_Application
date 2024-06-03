@@ -102,7 +102,7 @@ public class MediumLevelActivity extends AppCompatActivity {
 
         // Показать результаты через SnackBar
         Snackbar.make(findViewById(android.R.id.content),
-                "Правильные ответы: " + correctAnswerCount + "/5",
+                "Відповіді: " + correctAnswerCount + "/5",
                 Snackbar.LENGTH_LONG).show();
 
         // Вернуться на главный экран после небольшой задержки
@@ -113,6 +113,6 @@ public class MediumLevelActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, Snackbar.LENGTH_LONG + 1000); // Добавляем дополнительное время, чтобы SnackBar успел показаться
+        }, Snackbar.LENGTH_LONG + 5000); // Добавляем дополнительное время, чтобы SnackBar успел показаться
     }
 }
